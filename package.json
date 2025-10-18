@@ -10,10 +10,9 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "@radix-ui/react-accordion": "^1.2.12",
-    "@radix-ui/themes": "^3.2.1",
+    "@heroui/react": "^2.8.5",
+    "framer-motion": "^12.23.24",
     "next": "15.5.5",
-    "radix-ui": "^1.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
