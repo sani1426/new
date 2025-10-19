@@ -1,11 +1,11 @@
+import Navbar from "@/components/shared/Navbar";
 
 
 export default function RootLayout({ children }) {
   return (
-  <main>
-{children}
-  </main>
-        
-
-  );
+    <>
+    <Navbar />
+      <main>{children}</main>
+    </>
+  )
 }
