@@ -6,7 +6,7 @@ import {Button} from "@heroui/button"
 import Logo from '../UI/Logo';
 
 
-const Navbar = () => {
+const NavigationBar = () => {
   return (
         <Navbar shouldHideOnScroll>
         <NavbarBrand>
@@ -43,4 +43,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavigationBar
