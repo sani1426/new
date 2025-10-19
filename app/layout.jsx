@@ -1,6 +1,7 @@
 import { Poppins, Vazirmatn } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/context/HeroUIProvider'
+import {HeroUIProvider} from "@heroui/react";
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -22,9 +23,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+       <HeroUIProvider>
       <body className={`${poppins.variable} ${vazirMatn.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className='dark'>
+
+          {children}
+          </main>
+          </Providers>
       </body>
+      </HeroUIProvider>
     </html>
   )
 }
