@@ -4,6 +4,7 @@ import { Link} from '@heroui/react'
 import { Button } from '@heroui/button'
 import Logo from '../UI/Logo'
 import DropDownMenu from './DropDownMenu'
+import ThemeToggle from '../UI/ThemeToggle'
 
 
 const NavigationBar = () => {
@@ -34,7 +35,7 @@ const NavigationBar = () => {
       </NavbarContent>
       <NavbarContent justify='end'>
         <NavbarItem className='hidden lg:flex'>
-          <Link href='#'>Login</Link>
+       <ThemeToggle />
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color='primary' href='#' variant='flat'>
