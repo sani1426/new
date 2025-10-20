@@ -4,9 +4,10 @@ import {
   DropdownMenu,
   DropdownSection,
   DropdownItem,
-  Button,
-  User,
-} from "@heroui/react";
+  
+} from "@heroui/dropdown";
+import {User} from "@heroui/user"
+import {Button} from "@heroui/button"
 
 export const PlusIcon = (props) => {
   return (
