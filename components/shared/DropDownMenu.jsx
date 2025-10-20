@@ -1,4 +1,4 @@
-"use client"
+
 
 import {
   Dropdown,
@@ -9,7 +9,6 @@ import {
 } from '@heroui/dropdown'
 
 import { Button } from '@heroui/button'
-import { Fa500Px ,FaAcquisitionsIncorporated,FaAccusoft,FaAd } from "react-icons/fa";
 
 
 const DropMenu = () => {
@@ -29,15 +28,12 @@ const DropMenu = () => {
               key="new"
               description="Create a new file"
 
-              startContent={<Fa500Px className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               New file
             </DropdownItem>
             <DropdownItem
               key="copy"
               description="Copy the file link"
-
-              startContent={<FaAcquisitionsIncorporated className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               Copy link
             </DropdownItem>
@@ -45,7 +41,7 @@ const DropMenu = () => {
               key="edit"
               description="Allows you to edit the file"
  
-              startContent={<FaAccusoft className="text-xl text-default-500 pointer-events-none shrink-0" />}
+           
             >
               Edit file
             </DropdownItem>
@@ -56,8 +52,6 @@ const DropMenu = () => {
               className="text-danger"
               color="danger"
               description="Permanently delete the file"
-   
-              startContent={<FaAd className="text-xl pointer-events-none shrink-0 text-danger" />}
             >
               Delete file
             </DropdownItem>
