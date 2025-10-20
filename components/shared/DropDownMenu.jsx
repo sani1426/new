@@ -31,7 +31,7 @@ const DropDownMenu = () => {
             <DropdownItem
               key="new"
               description="Create a new file"
-              shortcut="⌘N"
+
               startContent={<Fa500Px className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               New file
@@ -39,7 +39,7 @@ const DropDownMenu = () => {
             <DropdownItem
               key="copy"
               description="Copy the file link"
-              shortcut="⌘C"
+
               startContent={<FaAcquisitionsIncorporated className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               Copy link
@@ -47,7 +47,7 @@ const DropDownMenu = () => {
             <DropdownItem
               key="edit"
               description="Allows you to edit the file"
-              shortcut="⌘⇧E"
+ 
               startContent={<FaAccusoft className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               Edit file
@@ -59,7 +59,7 @@ const DropDownMenu = () => {
               className="text-danger"
               color="danger"
               description="Permanently delete the file"
-              shortcut="⌘⇧D"
+   
               startContent={<FaAd className="text-xl pointer-events-none shrink-0 text-danger" />}
             >
               Delete file
