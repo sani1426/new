@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@heroui/navbar'
 import { Link} from '@heroui/react'
 import { Button } from '@heroui/button'
 import Logo from '../UI/Logo'
-import DropDownMenu from './DropDownMenu'
+import DropMenu from './DropDownMenu'
 import ThemeToggle from '../UI/ThemeToggle'
 
 
@@ -30,7 +30,7 @@ const NavigationBar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <DropDownMenu />
+          <DropMenu />
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify='end'>

@@ -12,7 +12,7 @@ import { Button } from '@heroui/button'
 import { Fa500Px ,FaAcquisitionsIncorporated,FaAccusoft,FaAd } from "react-icons/fa";
 
 
-const DropDownMenu = () => {
+const DropMenu = () => {
  
   return (
         <Dropdown
@@ -67,4 +67,4 @@ const DropDownMenu = () => {
   )
 }
 
-export default DropDownMenu
+export default DropMenu
