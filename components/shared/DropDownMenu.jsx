@@ -7,13 +7,13 @@ import {
   DropdownMenu,
   DropdownItem,
 } from '@heroui/dropdown'
-import { Link, cn } from '@heroui/react'
+
 import { Button } from '@heroui/button'
 import { Fa500Px ,FaAcquisitionsIncorporated,FaAccusoft,FaAd } from "react-icons/fa";
 
 
 const DropDownMenu = () => {
-  const iconClasses = 'text-xl text-default-500 pointer-events-none shrink-0'
+ 
   return (
         <Dropdown
         showArrow
@@ -32,7 +32,7 @@ const DropDownMenu = () => {
               key="new"
               description="Create a new file"
               shortcut="⌘N"
-              startContent={<Fa500Px className={iconClasses} />}
+              startContent={<Fa500Px className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               New file
             </DropdownItem>
@@ -40,7 +40,7 @@ const DropDownMenu = () => {
               key="copy"
               description="Copy the file link"
               shortcut="⌘C"
-              startContent={<FaAcquisitionsIncorporated className={iconClasses} />}
+              startContent={<FaAcquisitionsIncorporated className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               Copy link
             </DropdownItem>
@@ -48,7 +48,7 @@ const DropDownMenu = () => {
               key="edit"
               description="Allows you to edit the file"
               shortcut="⌘⇧E"
-              startContent={<FaAccusoft className={iconClasses} />}
+              startContent={<FaAccusoft className="text-xl text-default-500 pointer-events-none shrink-0" />}
             >
               Edit file
             </DropdownItem>
@@ -60,7 +60,7 @@ const DropDownMenu = () => {
               color="danger"
               description="Permanently delete the file"
               shortcut="⌘⇧D"
-        //       startContent={<FaAd className={cn(iconClasses, "text-danger")} />}
+              startContent={<FaAd className="text-xl pointer-events-none shrink-0 text-danger" />}
             >
               Delete file
             </DropdownItem>
