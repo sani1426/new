@@ -47,7 +47,7 @@ export default function DropMenu() {
     >
       <DropdownTrigger>
         <Button disableRipple variant="ghost">
-          Open Menu
+          Open
         </Button>
       </DropdownTrigger>
       <DropdownMenu
