@@ -2,7 +2,7 @@ import {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
-  DropdownSection,
+
   DropdownItem,
   
 } from "@heroui/dropdown";
@@ -68,7 +68,6 @@ export default function DropMenu() {
           ],
         }}
       >
-        <DropdownSection showDivider aria-label="Profile & Actions">
           <DropdownItem key="profile" isReadOnly className="h-14 gap-2 opacity-100">
             <User
               avatarProps={{
@@ -88,9 +87,7 @@ export default function DropMenu() {
           <DropdownItem key="new_project" endContent={<PlusIcon className="text-large" />}>
             New Project
           </DropdownItem>
-        </DropdownSection>
 
-        <DropdownSection showDivider aria-label="Preferences">
           <DropdownItem key="quick_search" shortcut="⌘K">
             Quick search
           </DropdownItem>
@@ -112,12 +109,12 @@ export default function DropMenu() {
           >
             Theme
           </DropdownItem>
-        </DropdownSection>
+      
 
-        <DropdownSection aria-label="Help & Feedback">
+       
           <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
           <DropdownItem key="logout">Log Out</DropdownItem>
-        </DropdownSection>
+  
       </DropdownMenu>
     </Dropdown>
   );
