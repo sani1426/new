@@ -60,7 +60,7 @@ const DropDownMenu = () => {
               color="danger"
               description="Permanently delete the file"
               shortcut="⌘⇧D"
-              startContent={<FaAd className={cn(iconClasses, "text-danger")} />}
+        //       startContent={<FaAd className={cn(iconClasses, "text-danger")} />}
             >
               Delete file
             </DropdownItem>
