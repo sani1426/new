@@ -9,7 +9,7 @@ import ThemeToggle from '../UI/ThemeToggle'
 
 const NavigationBar = () => {
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar className='py-2' shouldHideOnScroll>
       <NavbarBrand>
         <Logo />
       </NavbarBrand>
