@@ -19,7 +19,7 @@ const DropMenu = () => {
             "py-1 px-1 border border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-50 dark:to-black",
         }}>
         <DropdownTrigger>
-          <Button variant="bordered">open menu</Button>
+          <Button variant="bordered"> menu</Button>
         </DropdownTrigger>
         <DropdownMenu variant="faded">
         <DropdownSection title="Actions">
