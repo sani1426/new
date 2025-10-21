@@ -25,8 +25,6 @@ const DropMenu = () => {
         <DropdownSection title="Actions">
           <DropdownItem
             key="new"
-            description="Create a new file"
-            shortcut="⌘N"
           >
             New file
           </DropdownItem>
