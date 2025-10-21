@@ -28,6 +28,22 @@ const DropMenu = () => {
           >
             New file
           </DropdownItem>
+          <DropdownItem
+            key="new"
+            description="Create a new file"
+            shortcut="⌘N"
+            startContent={<AddNoteIcon className={iconClasses} />}
+          >
+            New file
+          </DropdownItem>
+          <DropdownItem
+            key="copy"
+            description="Copy the file link"
+            shortcut="⌘C"
+            startContent={<CopyDocumentIcon className={iconClasses} />}
+          >
+            Copy link
+          </DropdownItem>
           </DropdownSection>
         </DropdownMenu>
       </Dropdown>
