@@ -3,7 +3,8 @@ import {
         Dropdown,
         DropdownTrigger,
         DropdownMenu,
-        DropdownItem
+        DropdownItem,
+        DropdownSection
       } from "@heroui/dropdown";
 import { Button } from '@heroui/button';
 
