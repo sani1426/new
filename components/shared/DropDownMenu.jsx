@@ -7,9 +7,10 @@ import {
         DropdownSection
       } from "@heroui/dropdown";
 import { Button } from '@heroui/button';
+import { FaAngular } from "react-icons/fa"
 
 const DropMenu = () => {
-  
+  const iconClasses = "text-xl text-default-500 pointer-events-none shrink-0"
   return (
         <Dropdown
         showArrow
@@ -32,7 +33,7 @@ const DropMenu = () => {
             key="new"
             description="Create a new file"
             shortcut="⌘N"
-            startContent={<AddNoteIcon className={iconClasses} />}
+            startContent={<FaAngular className={iconClasses} />}
           >
             New file
           </DropdownItem>
@@ -40,7 +41,7 @@ const DropMenu = () => {
             key="copy"
             description="Copy the file link"
             shortcut="⌘C"
-            startContent={<CopyDocumentIcon className={iconClasses} />}
+            startContent={<FaAngular className={iconClasses} />}
           >
             Copy link
           </DropdownItem>
