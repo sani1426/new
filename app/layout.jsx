@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <HeroUIProvider>
-    <html lang='en'>
+    <html dir='rtl' lang='fa'>
       
       <body className={`${poppins.variable} ${vazirMatn.variable} antialiased`}>
         <Providers>
