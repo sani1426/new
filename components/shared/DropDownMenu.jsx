@@ -8,9 +8,12 @@ import {
       } from "@heroui/dropdown";
 import { Button } from '@heroui/button';
 import { FaAngular } from "react-icons/fa"
+import { useMainContext } from "@/context/mainContext";
 
 const DropMenu = () => {
   const iconClasses = "text-xl text-default-500 pointer-events-none shrink-0"
+ const {menus} = useMainContext()
+ 
   return (
         <Dropdown
         showArrow
@@ -23,29 +26,20 @@ const DropMenu = () => {
           <Button variant="bordered"> menu</Button>
         </DropdownTrigger>
         <DropdownMenu variant="faded">
-        <DropdownSection title="Actions">
-          <DropdownItem
-            key="new"
-          >
-            New file
-          </DropdownItem>
-          <DropdownItem
-            key="new"
-            description="Create a new file"
-            shortcut="⌘N"
+        {/* <DropdownSection title="Actions"> */}
+        {
+          menus?.map((menu,index)=>(
+            <DropdownItem
+            key={menu?.title}
+            description={menu?.description}
+            href={`/menu/${menu?._id}`}
             startContent={<FaAngular className={iconClasses} />}
           >
-            New file
+           {menu?.title}
           </DropdownItem>
-          <DropdownItem
-            key="copy"
-            description="Copy the file link"
-            shortcut="⌘C"
-            startContent={<FaAngular className={iconClasses} />}
-          >
-            Copy link
-          </DropdownItem>
-          </DropdownSection>
+          ))
+        }
+          {/* </DropdownSection> */}
         </DropdownMenu>
       </Dropdown>
   )

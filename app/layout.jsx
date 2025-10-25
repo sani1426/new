@@ -2,6 +2,7 @@ import { Poppins, Vazirmatn } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/context/HeroUIProvider'
 import {HeroUIProvider} from "@heroui/react";
+import { MainContextProvider } from '@/context/mainContext';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <HeroUIProvider>
     <html dir='rtl' lang='fa'>
-      
+      <MainContextProvider>
       <body className={`${poppins.variable} ${vazirMatn.variable} antialiased`}>
         <Providers>
           <main >
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
           </main>
           </Providers>
       </body>
-      
+      </MainContextProvider>
     </html>
     </HeroUIProvider>
   )
