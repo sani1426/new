@@ -5,6 +5,7 @@ import { Button } from '@heroui/button'
 import Logo from '../UI/Logo'
 import DropMenu from './DropDownMenu'
 import ThemeToggle from '../UI/ThemeToggle'
+import DropServices from './DropDownService'
 
 
 const NavigationBar = () => {
@@ -17,10 +18,8 @@ const NavigationBar = () => {
         <NavbarItem>
         <DropMenu />
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current='page' href='#'>
-            Customers
-          </Link>
+        <NavbarItem >
+        <DropServices />
         </NavbarItem>
         <NavbarItem>
           <Link color='foreground' href='#'>
