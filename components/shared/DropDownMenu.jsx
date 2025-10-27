@@ -20,12 +20,12 @@ const DropMenu = () => {
         classNames={{
           base: "before:bg-default-200", // change arrow background
           content:
-            "py-1 px-1 border border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-200 dark:to-black",
+            "py-1 px-1 border w-[200px] border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-200 dark:to-black",
         }}>
         <DropdownTrigger>
           <Button variant="bordered"> menu</Button>
         </DropdownTrigger>
-        <DropdownMenu variant="faded">
+        <DropdownMenu variant="faded" >
         {/* <DropdownSection title="Actions"> */}
         {
           menus?.map((menu,index)=>(
