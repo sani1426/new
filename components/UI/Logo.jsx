@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Link href="/" className='flex items-center gap-2 py-2'>
         <Image src="/images/logo.png" width={50} height={20} className='rounded-2xl logo' alt='logo-image'  />
-        <h1 className='text-3xl lg:text-4xl text-nowrap'>Mr.Sam</h1>
+        <h1 className='text-3xl lg:text-4xl text-nowrap'>آقای تشریفات</h1>
     </Link>
   )
 }
