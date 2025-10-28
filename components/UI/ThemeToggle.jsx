@@ -35,7 +35,7 @@ const ThemeToggle = () => {
         classNames={{
           base: "before:bg-default-200", // change arrow background
           content:
-            "py-1 px-1 border w-[50px] flex flex-col justify-center items-center border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-200 dark:to-black",
+            "py-1 px-1 border w-[50px] flex flex-col justify-center items-center border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-300 dark:to-black",
         }}
         >
         <DropdownTrigger>
