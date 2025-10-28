@@ -10,7 +10,7 @@ import DropServices from './DropDownService'
 
 const NavigationBar = () => {
   return (
-    <Navbar className='py-2' shouldHideOnScroll>
+    <Navbar maxWidth='2xl' className='py-2' shouldHideOnScroll>
       <NavbarBrand>
         <Logo />
       </NavbarBrand>
