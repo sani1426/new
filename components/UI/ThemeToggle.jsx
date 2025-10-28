@@ -14,7 +14,7 @@ const ThemeToggle = () => {
   const [theme, setTheme] = useState("light")
 
   useEffect(() => {
-    const [li,setLi] = useState(localStorage.getItem("theme"))
+    const [li,setLi] = useState(()=>localStorage.getItem("theme"))
     console.log(li)
     switch (theme) {
       case 'light':
