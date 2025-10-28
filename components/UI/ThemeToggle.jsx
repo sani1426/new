@@ -11,9 +11,8 @@ import { Button } from '@heroui/button';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(()=>{
-    localStorage.getItem('theme')
-  })
+  const [theme, setTheme] = useState("light")
+
   useEffect(() => {
     switch (theme) {
       case 'light':
