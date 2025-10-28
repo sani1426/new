@@ -6,6 +6,7 @@ import Logo from '../UI/Logo'
 import DropMenu from './DropDownMenu'
 import ThemeToggle from '../UI/ThemeToggle'
 import DropServices from './DropDownService'
+import { HiMenuAlt4 } from "react-icons/hi";
 
 
 const NavigationBar = () => {
@@ -35,8 +36,8 @@ const NavigationBar = () => {
        <ThemeToggle />
         </NavbarItem>
         <NavbarItem>
-          <Button  color='primary' href='#' variant='flat'>
-            Sign Up
+          <Button  color='primary'  variant='flat'>
+            <HiMenuAlt4 className='text-3xl' />
           </Button>
         </NavbarItem>
       </NavbarContent>
