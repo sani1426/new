@@ -11,7 +11,9 @@ import { Button } from '@heroui/button';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(()=>{
+    localStorage.getItem('theme')
+  })
   useEffect(() => {
     switch (theme) {
       case 'light':
@@ -27,10 +29,19 @@ const ThemeToggle = () => {
     }
   }, [theme])
   return (
-        <Dropdown>
+        <Dropdown
+        showArrow
+        classNames={{
+          base: "before:bg-default-200", // change arrow background
+          content:
+            "py-1 px-1 border w-[50px] flex flex-col justify-center items-center border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-200 dark:to-black",
+        }}
+        >
         <DropdownTrigger>
           <Button variant="bordered">{
-                theme === "light" ? "light" : "dark"
+                theme === "light" ? (
+                  <FaSun  className='text-2xl text-center' />
+                ) : (<FaMoon  className='text-2xl text-center' />)
           }</Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions">

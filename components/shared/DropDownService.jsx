@@ -23,7 +23,7 @@ const DropServices = () => {
             "py-1 px-1 border w-[200px] border-default-200 bg-linear-to-br from-white to-default-200 dark:from-default-200 dark:to-black",
         }}>
         <DropdownTrigger>
-          <Button variant="bordered"> خدمات</Button>
+          <Button variant="shadow"> خدمات</Button>
         </DropdownTrigger>
         <DropdownMenu variant="faded" >
         {/* <DropdownSection title="Actions"> */}
