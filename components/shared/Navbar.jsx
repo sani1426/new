@@ -35,7 +35,7 @@ const NavigationBar = () => {
        <ThemeToggle />
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color='primary' href='#' variant='flat'>
+          <Button  color='primary' href='#' variant='flat'>
             Sign Up
           </Button>
         </NavbarItem>

@@ -8,6 +8,7 @@ import {
         DropdownItem
       } from "@heroui/dropdown";
 import { Button } from '@heroui/button';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState('light')
@@ -15,9 +16,11 @@ const ThemeToggle = () => {
     switch (theme) {
       case 'light':
         document.documentElement.classList.remove('dark')
+        localStorage.setItem("theme" , "light")
         break
       case 'dark':
         document.documentElement.classList.add('dark')
+        localStorage.setItem("theme" , "dark")
         break
       default:
         break
@@ -31,8 +34,8 @@ const ThemeToggle = () => {
           }</Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions">
-          <DropdownItem onClick={()=>setTheme("light")} key="light">light</DropdownItem>
-          <DropdownItem onClick={()=>setTheme("dark")} key="dark">dark</DropdownItem>
+          <DropdownItem onClick={()=>setTheme("light")} key="light"><FaSun  className='text-2xl text-center' /></DropdownItem>
+          <DropdownItem onClick={()=>setTheme("dark")} key="dark"><FaMoon className='text-2xl text-center' /></DropdownItem>
         </DropdownMenu>
       </Dropdown>
   )
